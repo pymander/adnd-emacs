@@ -1,0 +1,43 @@
+The Magnificent Monster Database (MMDB) version 5.0 is distributed in a
+modified format with this software by permission of Roger D. Mast
+<masts@ptdprolog.net>.  My profound thanks goes out to him for allowing
+me to use his database.
+
+Thanks also go to A. Michelle Simmons <asimmon@IUPUI.EDU> for the Mage
+and Priest spell databases, which I also modified for use in my
+software.
+
+The following links are fairly relevant to AD&D-Emacs:
+
+Magnificent Monster Database homepage:
+               http://www.istari.org/~olik/index.html
+TSR, Inc.:     http://www.tsr.com/
+AARG Homepage: http://www.aarg.net/
+
+
+HOW TO INSTALL:
+
+1. Put all of the .el files somewhere in your Emacs load path.
+
+2. Put this in your .emacs file or your site init file:
+
+   (autoload 'adnd-minor-mode "adnd" "AD&D Mode" t)
+
+3. Find out where you're sticking the 'monster.raw' file, and do this
+   in the same spot:
+
+   (setq adnd-monster-db "/path/to/monster.raw")
+
+Assuming easymenu is installed, all of the special keybindings and
+things-that-are-ready should be outlined in the AD&D menu when you
+activate `M-x adnd-minor-mode'.  If easymenu is not installed, you'll
+need to get it.
+
+Please send any feedback, bug reports, or suggestions to Erik Arneson
+<erik@mind.net>.  Thanks for using my software!
+
+--
+# Erik Arneson       erik@mind.net       Network Engineer #
+# Infostructure   http://www.mind.net/     (541) 488-1962 #
+# "My brain is my second favorite organ."  -- Woody Allen #
+
